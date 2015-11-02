@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-# This tool helps to generate training data set of an images croped from the ones located under './images' directory.
-# create_training_data.py <dirname> <xml file>
+# This tool helps to generate training data set of an images croped from the original images.
 import cv2
 import math
 import os
@@ -8,6 +7,10 @@ import os.path
 import sys
 import subprocess
 import xml.etree.ElementTree as ET
+
+if sys.argv[1] == "-help":
+    print ("usage example:   ./create_training_data.py <dir_for_cropped_images> <file.xml> <path_to_original_images>")
+    sys.exit(0)
 
 dirname = sys.argv[1]
 xmlfile = sys.argv[2]
