@@ -1,5 +1,11 @@
 # Training Data Preparation
-This tools designed to create a set of images cropped from the original images for making an appropriate database of classified images. Possible usages is to create train/test database for a Neural Network.
+This tools designed to create a set of images cropped from the original images for making an appropriate database of classified images. The graphical interface provided by 'imglab' makes it very easy to use. 
+
+You can use the up and down arrow keys to cycle though the images and the mouse to label objects.  In particular, holding the shift key, left clicking, and dragging the mouse will allow you to draw boxes around the objects you wish to detect.  
+
+Once you finish labeling objects go to the file menu, click save, and then close the program. This will save the object boxes back to the xml file.
+
+Possible usages is to create train/test database for a Neural Network.
 
 ## Pre-requisites
     OpenCV (2.4.11 or later)
