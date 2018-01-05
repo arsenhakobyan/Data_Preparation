@@ -15,6 +15,7 @@ if sys.argv[1] == "-help":
 def dummy():
     return 9
 
+
 dirname = sys.argv[1]
 xmlfile = sys.argv[2]
 origimgdir = sys.argv[3]
