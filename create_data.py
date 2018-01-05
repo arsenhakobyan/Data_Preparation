@@ -12,6 +12,9 @@ if sys.argv[1] == "-help":
     print ("usage example:   ./create_training_data.py <dir_for_cropped_images> <file.xml> <path_to_original_images>")
     sys.exit(0)
 
+def dummy():
+    return 9
+
 dirname = sys.argv[1]
 xmlfile = sys.argv[2]
 origimgdir = sys.argv[3]
